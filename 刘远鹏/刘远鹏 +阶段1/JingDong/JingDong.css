@@ -1,0 +1,594 @@
+/*京东页面练习的样式*/
+*{
+	margin:0;
+	padding:0;
+	font-size:12px;
+
+}
+
+div#mainContent{
+	width:100%;
+	background-color:#f7f7f7;
+	min-width:1920px;
+	padding-bottom:10px;
+}
+li{
+	border:0px solid;
+}
+
+div.header{
+	width:100%;
+	min-width:1920px;	/*重要，保证浏览器窗口缩小时，div不随着界面一同缩小，但是这个分辨率会超过一些浏览器默认的分辨率*/
+	height:30px;
+	background-image:url(img/headerback.png);
+	background-size:100%;
+}
+.header .nav{
+	height:30px;
+	width:1220px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header .nav .left_nav{
+	float:left;
+	font-size:14px;
+	text-align:center;
+	line-height:30px;	/*使文本内容的行高和div的高度一致，实现垂直方向的居中*/
+	color:#666;
+	width:80px;
+	height:30px;
+}
+.header .nav #hicon1{
+	display:block;
+	margin-top:7px;
+	float:left;
+}
+.header .nav .right_nav{
+	float:right;
+	line-height:30px;
+	width:800px;
+	height:30px;
+}
+.header .nav .right_nav ul{
+	list-style-type:none;
+}
+.header .nav .right_nav li{
+	float:left;
+	margin:0px 5px;
+	font-size:14px;
+	color:#666;
+}
+.header .nav .right_nav a{
+	font-size:14px;
+	color:#666;
+	text-decoration:none;
+}
+.header .nav .right_nav #register{
+	color:#ff0000;
+}
+/*--------------------------------------------------------------------------------*/
+div#logo{
+	border:0px solid #ff0000;
+	width:1220px;
+	height:100px;
+	margin-left:345px;/*这里不采取自动居中，防止随着页面的放大缩小而导致div模块的移动*/
+}
+#logo .logoCon{
+	height:100px;
+	float:left;
+}
+#logo #logoImg{
+	width:400px;
+}
+#logo #logoSear{
+	width:500px;
+}
+#logo #logoSear #input{
+	float:left;
+	border:2px solid #c91623;
+	width:500px;
+	height:30px;
+	margin-top:23px;
+}
+#logo #logoSear #input #searIcon{
+	float:left;
+	width:75px;
+	height:30px;	
+}
+#logo #logoSear #input #infra{
+	width:425px;
+	height:30px;
+	float:left;
+}
+#logo #logoSear #seLabel{
+	float:left;
+	width:450px;
+	margin-top:5px;
+}
+#logo #logoSear #seLabel ul{
+	list-style-type:none;
+}
+#logo #logoSear #seLabel li{
+	float:left;
+	font-size:12px;
+	color:#666;
+	margin-right:10px;
+}
+#logo #logoCart{
+}
+#logo #logoCart #mycart{
+	border:1px solid #dedede;
+	height:30px;
+	width:140px;
+	margin-top:25px;
+	margin-left:75px;
+	background-color:#f9f9f9;
+	text-align:center;
+	line-height:30px;
+	position:relative;
+}
+#logo #logoCart #mycartCon{
+	margin-left:75px;
+	width:140px;
+	height:60px;
+	line-height:30px;
+	text-align:center;
+	border:1px solid #dedede;
+	background-color:#f9f9f9;
+	border-top:none;
+	display:none;
+}
+#logo #logoCart #mycart #cartCount{
+	position:absolute;
+	left:108px;
+}
+/*--------------------------------------------------------------------------------*/
+div#mainNavHead{
+	position:relative;
+	width:100%;
+	height:30px;
+}
+
+#mainNavHead #cateTi{
+	border:0px solid #ff0000;
+	float:left;
+	width:210px;
+	height:30px;
+	margin-left:345px;
+	background-color:#c91623;
+}
+/*用css绘制三条横杠线，自行体会*/
+#mainNavHead #cateTi .menuIcon{
+	width: 10px;
+	height: 0.5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	background-color: #ffffff;
+	padding: 3px 0px;
+	margin:9px;
+	background-clip:content-box;
+	float:left;
+}
+#mainNavHead #cateTi #mainNavHeadTxt{
+	float:left;
+	color:#ffffff;
+	line-height:30px;
+}
+#mainNavHead #navLabel{
+	position:absolute;	/*这里用FLOAT不知为何窗口缩小时会自动换行*/
+	top:0px;
+	left:555px;
+	width:785px;
+	height:30px;
+	
+}
+#mainNavHead #navLabel ul{
+	padding-left:20px;
+	margin-top:9px;
+	list-style-type:none;
+}
+#mainNavHead #navLabel li{
+	margin-right:40px;
+	float:left;
+}
+/*--------------------------------------------------------------------------------*/
+div#mainNavBody{
+	border:0px solid #ff0000;
+	width:100%;
+	height:444px;
+	background-image:url(img/NavBack.jpg);
+	min-width:1920px;	
+	z-index:0;
+	position:relative;
+}
+/*
+#mainNavBody #backImg{
+	border:1px solid #ff0000;
+	width:100%;
+	height:442px;
+}
+*/
+#mainNavBody #cateCon{
+	border:0px solid #ff0000;
+	float:left;
+	width:210px;
+	height:444px;
+	margin-left:345px;
+	z-index:1;
+	background-color:#fcfdfd;
+	opacity:0.9;
+
+}
+#mainNavBody #cateCon ul{
+	list-style-type:none;
+	width:170px;
+	margin-left:20px;
+}
+#mainNavBody #cateCon li{
+	border-bottom:1px dotted #808080;
+	height:36px;
+	width:170px;
+	line-height:36px;
+}
+#mainNavBody #intro{
+	float:right;
+	width:210px;
+	height:444px;
+	z-index:0;
+	background-color:#ffffff;
+	position:relative;
+	right:345px;
+}
+#mainNavBody #intro #login_img{
+	width:50px;
+	height:50px;
+	margin:20px auto 0px;
+}
+#mainNavBody #intro #welcome{
+	font-size:14px;
+	font-weight:600;
+	text-align:center;
+	margin:10px 0px;
+}
+#mainNavBody #intro #login_op{
+	text-align:center;
+	color:#666;
+	margin:10px 0px;
+}
+#mainNavBody #intro #login_op a{
+	text-decoration:none;
+	color:#666;
+}
+#mainNavBody #intro #guide_new{
+	border:2px solid #c91623;
+	width:64px;
+	margin:10px auto;
+	text-align:center;
+	padding:5px;
+	color:#c91623;
+}
+#mainNavBody #intro #pay_info{
+	width:202px;
+	margin:15px auto;
+	
+}
+#mainNavBody #intro #payTxt{
+	width:170px;
+	margin:0 auto;
+}
+#mainNavBody #intro #payTxt #payTxtTi{
+	text-align:center;
+	margin:10px 0;
+	color:#666;
+	font-weight:600;
+}
+#mainNavBody #intro #payTxt #payTxtCon{
+	color:#999999;
+	line-height:20px;
+}
+/*--------------------------------------------------------------------------------*/
+div#seckill{
+	border:0px solid #ff0000;
+	height:335px;
+	width:1230px;
+	margin-left:345px;
+	background-color:#ffffff;
+}
+#seckill #seckillTime{
+	border:0px solid #ff0000;
+	height:80px;
+	width:1230px;
+	background-color:#e8e2dd;
+}
+#seckill #seckillTime #seckillTimeIcon{
+	border:0px solid #ff0000;
+	height:45px;
+	width:50px;
+	margin-top:25px;
+	padding-left:5px;
+	padding-top:5px;
+	float:left;
+}
+#seckill #seckillTime #seckillTimeTxt{
+	border:0px solid #ff0000;
+	height:50px;
+	width:150px;
+	margin-top:25px;
+	float:left;
+	font-size:30px;
+	font-weight:bold;
+	line-height:50px;	
+	text-shadow:rgba(0,0,0,0.5) 1px 1px 2px; /*给文字设置拖影，重要！记住！*/
+}
+#seckill #seckillTime #seckillTimeRemind{
+	border:0px solid #ff0000;
+	height:50px;
+	width:160px;
+	margin-top:25px;
+	float:left;
+	font-size:18px;
+	color:#808080;
+	line-height:50px;	
+}
+#seckill #seckillTime #seckillTimeAlarm{
+	border:0px solid #ff0000;
+	float:left;
+	height:50px;
+	width:600px;
+	margin-top:25px;
+}
+#seckill #seckillTime #seckillTimeAlarm ul{
+	list-style-type:none;
+}
+#seckill #seckillTime #seckillTimeAlarm li{
+	float:left;
+}
+#seckill #seckillTime #seckillTimeAlarm .num{
+	border:0px solid #ff0000;
+	height:40px;
+	width:25px;
+	margin-top:5px;
+	font-size:18px;
+	font-weight:bold;
+	color:#c91623;
+	line-height:40px;	
+	text-align:center;
+	background-color:#ffffff;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 4px;
+}
+#seckill #seckillTime #seckillTimeAlarm .colon{
+	border:0px solid #ff0000;
+	height:40px;
+	width:10px;
+	margin-top:5px;
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+	line-height:40px;	
+	text-align:center;
+}
+#seckill #seckillCon{
+	border:0px solid #ff0000;
+	height:255px;
+	width:1230px;
+}
+#seckill #seckillCon .con{
+	border-right:1px solid #e8e2dd;
+	height:255px;
+	width:204px;
+	float:left;
+	
+}
+#seckill #seckillCon .con .pic{
+	border:0px solid #ff0000;
+	height:155px;
+	width:205px;
+	text-align:center;
+}
+#seckill #seckillCon .con .pic .pic_con{
+	margin-top:25px;
+}
+#seckill #seckillCon .con .txt{
+	border:0px solid #ff0000;
+	height:50px;
+	width:155px;
+	margin:0 25px;
+	text-align:center;
+}
+#seckill #seckillCon .con .price{
+	border:0px solid #ff0000;
+	height:50px;
+	width:165;
+	line-height:50px;
+	margin:0 20px;
+}
+
+/*--------------------------------------------------------------------------------*/
+#mainMol1{
+	border:0px solid #ff0000;
+	width:1230px;
+	height:530px;
+	margin:0 auto;
+}
+#mainMol1 #Mol1_ti{
+	border:0px solid #ff0000;
+	width:1230px;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+}
+#mainMol1 #Mol1_con{
+	border:0px solid #ff0000;
+	width:1230px;
+	height:480px;
+}
+#mainMol1 #Mol1_con .con1{
+	border:0px solid #ff0000;
+	width:407px;
+	height:480px;
+	margin-right:10px;
+	float:left;
+}
+#mainMol1 #Mol1_con .con2{
+	border:0px solid #ff0000;
+	width:264px;
+	height:235px;
+	margin-right:10px;
+	margin-bottom:10px;
+	float:left;
+}
+#mainMol1 #Mol1_con .con3{
+	border:0px solid #ff0000;
+	width:264px;
+	height:235px;
+	margin-right:10px;
+	margin-bottom:10px;
+	float:left;
+}
+#mainMol1 #Mol1_con .con4{
+	border:0px solid #ff0000;
+	width:264px;
+	height:235px;
+
+	float:left;
+}#mainMol1 #Mol1_con .con5{
+	border:0px solid #ff0000;
+	width:264px;
+	height:235px;
+	margin-right:10px;
+	float:left;
+	
+}#mainMol1 #Mol1_con .con6{
+	border:0px solid #ff0000;
+	width:264px;
+	height:235px;
+	float:left;
+}
+/*--------------------------------------------------------------------------------*/
+#pageFoot{
+	width:100%;
+	min-width:1920px;
+	height:520px;
+	background-color:#eaeaea;
+}
+#pageFoot #Trait{
+	border-bottom:1px dotted #808080;
+	height:100px;
+	width:100%;
+	position:relative;
+}
+#pageFoot #Trait .img{
+	width:60px;
+	height:100px;
+	float:left;
+	text-align:center;
+	padding-top:30px;
+}
+#pageFoot #Trait .text{
+	width:240px;
+	height:100px;
+	font-size:20px;
+	font-weight:600;
+	line-height:100px;
+	float:left;
+}
+#pageFoot #Trait #T_td1{
+	position:absolute;
+	left:365px;
+	border:0px solid #ff0000;
+	width:300px;
+	height:100px;
+}
+
+#pageFoot #Trait #T_td2{
+	position:absolute;
+	left:665px;
+	border:0px solid #ff0000;
+	width:600px;
+	height:100px;
+}
+#pageFoot #Trait #T_td3{
+	position:absolute;
+	left:965px;
+	border:0px solid #ff0000;
+	width:300px;
+	height:100px;
+}
+#pageFoot #Trait #T_td4{
+	position:absolute;
+	left:1265px;
+	border:0px solid #ff0000;
+	width:300px;
+	height:100px;
+}
+/*--------------------------------------------------------------------------------*/
+#pageFoot #Service{
+	border-bottom:1px dotted #808080;
+	height:200px;
+	width:100%;
+	position:relative;
+}
+#pageFoot #Service .title{
+	height:50px;
+	width:240px;
+	font-size:16px;
+	font-weight:600;
+	line-height:50px;
+	color:#666;
+}
+#pageFoot #Service .con{
+	height:150px;
+	width:240px;
+	color:#666;
+}
+#pageFoot #Service ul{
+	list-style-type:none;
+}
+#pageFoot #Service li{
+	width:240px;
+	height:20px;
+}
+#pageFoot #Service #S_td1{
+	position:absolute;
+	left:405px;
+	border:0px solid #ff0000;
+	width:240px;
+	height:200px;
+}
+#pageFoot #Service #S_td2{
+	position:absolute;
+	left:645px;
+	border:0px solid #ff0000;
+	width:240px;
+	height:200px;
+}
+#pageFoot #Service #S_td3{
+	position:absolute;
+	left:885px;
+	border:0px solid #ff0000;
+	width:240px;
+	height:200px;
+}
+#pageFoot #Service #S_td4{
+	position:absolute;
+	left:1125px;
+	border:0px solid #ff0000;
+	width:240px;
+	height:200px;
+}
+#pageFoot #Service #S_td5{
+	position:absolute;
+	left:1365px;
+	border:0px solid #ff0000;
+	width:240px;
+	height:200px;
+}
+
+
+
+
+
+
+
+
+

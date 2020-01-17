@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="JingDong\JingDong.css">
+<style>
+
+</style>
+</head>
+<body>
+<div class="header">
+	<div class="nav">
+		<img id="hicon1" src="JingDong\img\hicon1.png"><!--这里也放进一个div可能会比较好-->
+		<div class="left_nav">京东首页</div>
+		<div class="right_nav">
+			<ul>
+				<li><a href="#">你好，请登录</a> <a href="#" id="register">免费注册</a></li>
+				<li><img src="JingDong\img\sep.png"></li><!--如果在Li中插入一个图片，那么最好将两个div放入一个li中，以免受到li本身的外边框的影响-->
+				<li>我的订单</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>我的京东</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>京东会员</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>企业采购</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>客户服务</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>网站导航</li>
+				<li><img src="JingDong\img\sep.png"></li>
+				<li>手机京东</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="logo">
+	<div id="logoImg" class="logoCon">
+		<img src="JingDong\img\logo.png">
+		<p style="float:right;font-size:18px;color:#666;margin-top:35px;margin-right:150px">全球售</p>
+	</div>
+	<div id="logoSear" class="logoCon">
+		<div class="form">
+			<div id="input">
+				<div id="infra"><form name="search" action="#"><input type="text" style="width:500px;height:30px;border:none;font-size:16px;"></form></div>
+				<div id="searIcon"><img src="JingDong\img\searIcon.png" width="75px" height="30px"></div>
+			</div>
+		</div>
+		<div id="seLabel"><!--也可以用一排span来实现，span是inline元素，不需要float-->
+			<ul>
+				<li>本命年</li>
+				<li>行车记录仪</li>
+				<li>羽绒服</li>
+				<li>新年礼物</li>
+				<li>华为</li>
+				<li>小家电</li>
+			</ul>
+		</div>
+	</div>
+	<div id="logoCart" class="logoCon">
+		<div id="mycart">
+			<div id="cartCount"><img src="JingDong\img\cartCount.png" width="15px" height="15px"></div>
+			<span>我的购物车</span>
+			<img src="JingDong\img\cart.png" width="15px" height="15px">
+		</div>
+		<div id="mycartCon">
+			很抱歉，购物车中什么都没有。
+		</div>
+	</div>
+</div>
+<div id="mainNavHead">
+	<!--<img src="JingDong\img\NavBack.jpg" height="442px" width="100%">-->
+	<div id="cateTi">
+		<div class="menuIcon"></div>
+		<div id="mainNavHeadTxt">商品分类</div>
+	</div>
+	<div id="navLabel">
+		<ul>
+			<li>匠心中国</li>
+			<li>男士优选</li>
+			<li>中国质造</li>
+			<li>新年礼品</li>
+			<li>智能生活</li>
+			<li>儿童专区</li>
+		</ul>
+	</div>
+</div>
+<div id="mainNavBody">
+	<div id="cateCon">
+		<ul>
+			<li>家用电器</li>
+			<li>手机通讯</li>
+			<li>数码影音</li>
+			<li>电脑办公</li>
+			<li>居家生活/家装建材</li>
+			<li>男装/女装/童装/内衣</li>
+			<li>男鞋/女鞋/钟表/珠宝</li>
+			<li>运动户外</li>
+			<li>汽车用品</li>
+			<li>母婴/玩具乐器</li>
+			<li>礼品箱包/计生保健</li>
+			<li>图书</li>
+		</ul>
+	</div>
+	<div id="intro">
+		<div id="login_img"><img src="JingDong\img\login_icon.jpg"></div>
+		<div id="welcome">HI，欢迎来到京东</div>
+		<div id="login_op"><a href="#">登录</a> | <a href="#">注册</a></div>
+		<div id="guide_new">新人指南</div>
+		<div id="pay_info"><img src="JingDong\img\pay_info.png"></div>
+		<div id="payTxt"><div id="payTxtTi">京东全球售 一站通全球</div><div id="payTxtCon">轻松直邮全球200+国家和地区，为全世界的华人，挑选优质的京东好店、提供精选的京东自营商品。</div></div>
+	</div>
+</div>
+<div id="mainContent">
+	<div id="seckill">
+		<div id="seckillTime">
+			<div id="seckillTimeIcon"><img src="JingDong\img\alarm.png" height="40px" width="40px"></div><div id="seckillTimeTxt">京东秒杀</div>
+			<div id="seckillTimeRemind">距离本场结束还有</div>
+			<div id="seckillTimeAlarm">
+				<ul>
+					<li class="num" style="margin-right:5px;">1</li>
+					<li class="num">1</li>
+					<li class="colon">:</li>
+					<li class="num" style="margin-right:5px;">1</li>
+					<li class="num">1</li>
+					<li class="colon">:</li>
+					<li class="num" style="margin-right:5px;">1</li>
+					<li class="num">1</li>
+				</ul>
+			</div>
+		</div>
+		<div id="seckillCon">
+			<div class="con">
+				<div class="pic"><img class="pic_con" src="JingDong\img\con1.jpg" width="105px" height="105px"></div>
+				<div class="txt">三星(SAMSUNG) 960 EVO 250G M.2 NVMe 固态硬盘</div>
+				<div class="price"><span style="font-size:24px;color:#ff0000;">&yen;799</span><span style="float:right;color:#666;text-decoration:line-through">&yen;969</span></div>
+			</div>
+			<div class="con">
+				<div class="pic"><img class="pic_con" src="JingDong\img\con2.jpg" width="105px" height="105px"></div>
+				<div class="txt">三星(SAMSUNG) 960 EVO 250G M.2 NVMe 固态硬盘</div>
+				<div class="price"><span style="font-size:24px;color:#ff0000;">&yen;799</span><span style="float:right;color:#666;text-decoration:line-through">&yen;969</span></div>
+			</div>
+			<div class="con">
+				<div class="pic"><img class="pic_con" src="JingDong\img\con3.jpg" width="105px" height="105px"></div>
+				<div class="txt">三星(SAMSUNG) 960 EVO 250G M.2 NVMe 固态硬盘</div>
+				<div class="price"><span style="font-size:24px;color:#ff0000;">&yen;799</span><span style="float:right;color:#666;text-decoration:line-through">&yen;969</span></div>
+			</div>
+			<div class="con">
+				<div class="pic"><img class="pic_con" src="JingDong\img\con4.jpg" width="105px" height="105px"></div>
+				<div class="txt">三星(SAMSUNG) 960 EVO 250G M.2 NVMe 固态硬盘</div>
+				<div class="price"><span style="font-size:24px;color:#ff0000;">&yen;799</span><span style="float:right;color:#666;text-decoration:line-through">&yen;969</span></div>
+			</div>
+			<div class="con">
+				<div class="pic"><img class="pic_con" src="JingDong\img\con5.jpg" width="105px" height="105px"></div>
+				<div class="txt">三星(SAMSUNG) 960 EVO 250G M.2 NVMe 固态硬盘</div>
+				<div class="price"><span style="font-size:24px;color:#ff0000;">&yen;799</span><span style="float:right;color:#666;text-decoration:line-through">&yen;969</span></div>
+			</div>
+			<div class="more">
+				<div><img src="JingDong\img\con6.webp.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<div id="mainMol1">
+		<div id="Mol1_ti"><b style="font-size:24px;">本周大牌</b> 品牌好物一站购</div>
+		<div id="Mol1_con">
+			<div class="con1"><img src="JingDong\img\mol1_con1.jpg" width="407px" height="480px"></div>
+			<div class="con2"><img src="JingDong\img\mol1_con2.jpg"></div>
+			<div class="con3"><img src="JingDong\img\mol1_con3.jpg"></div>
+			<div class="con4"><img src="JingDong\img\mol1_con4.jpg"></div>
+			<div class="con5"><img src="JingDong\img\mol1_con5.jpg"></div>
+			<div class="con6"><img src="JingDong\img\mol1_con6.jpg"></div>
+		</div>
+	</div>
+</div>
+<div id="pageFoot">
+	<div id="Trait">
+		<div id="T_td1">
+			<div class="img"><img src="JingDong\img\fcon1.png"></div>
+			<div class="text">品类齐全，轻松购物</div>
+		</div>
+		<div id="T_td2">
+			<div class="img"><img src="JingDong\img\fcon2.png"></div>
+			<div class="text">多仓直发，极速配送</div>
+		</div>
+		<div id="T_td3">
+			<div class="img"><img src="JingDong\img\fcon3.png"></div>
+			<div class="text">正品行货，精致服务</div>
+		</div>
+		<div id="T_td4">
+			<div class="img"><img src="JingDong\img\fcon4.png"></div>
+			<div class="text">天天低价，畅选无忧</div>
+		</div>
+	</div>
+	<div id="Service">
+		<div id="S_td1">
+			<div class="title">购物指南</div>
+			<div class="con">
+				<ul>
+					<li>购物流程</li>
+					<li>会员介绍</li>
+					<li>生活旅行/团购</li>
+					<li>常见问题</li>
+					<li>大家电</li>
+					<li>联系客服</li>
+				</ul>
+			</div>
+		</div>
+		<div id="S_td2">
+			<div class="title">配送方式</div>
+			<div class="con">
+				<ul>
+					<li>上门自提</li>
+					<li>211限时达</li>
+					<li>配送服务查询</li>
+					<li>配送费收取标准</li>
+					<li>海外配送</li>
+				</ul>
+			</div>
+		</div>
+		<div id="S_td3">
+			<div class="title">支付方式</div>
+			<div class="con">
+				<ul>
+					<li>货到付款</li>
+					<li>在线支付</li>
+					<li>分期付款</li>
+					<li>邮局汇款</li>
+					<li>公司转账</li>
+				</ul>
+			</div>
+		</div>
+		<div id="S_td4">
+			<div class="title">售后服务</div>
+			<div class="con">
+				<ul>
+					<li>售后政策</li>
+					<li>价格保护</li>
+					<li>退款说明</li>
+					<li>返修/退换货</li>
+					<li>取消订单</li>
+				</ul>
+			</div>
+		</div>
+		<div id="S_td5">
+			<div class="title">特色服务</div>
+			<div class="con">
+				<ul>
+					<li>夺宝岛</li>
+					<li>DIY装机</li>
+					<li>延保服务</li>
+					<li>京东E卡</li>
+					<li>京东通信</li>
+					<li>京东JD+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footMess">
+	</div>
+</div>
+
+
+<script src="JingDong/myJingDong.js"></script>
+</body>
+<html>
+
+
+
+
+
+
+
+
+
+
