@@ -64,6 +64,7 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
         </dependency>
+
         <!--@Slf4j自动化日志对象-log-->
         <dependency>
             <groupId>org.projectlombok</groupId>
